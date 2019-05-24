@@ -1,0 +1,16 @@
+#include<stdio.h>
+int main()
+{
+    int n;
+    int shared=5;
+    int liked=0,cumulative=0;
+    scanf("%d",&n);
+    for(int i=1;i<=n;i++)
+    {
+        liked=shared/2;
+        cumulative+=liked;
+        shared=liked*3;
+    }
+    printf("%d",cumulative);
+    return 0;
+}
